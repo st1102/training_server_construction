@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe file("/etc/ssh/sshd_config") do
-	its(:content) { should match /PermitRootLogin without-password/ }
+	its(:content) { should match /^[^#]*PermitRootLogin without-password/ }
 end
 
 %w(vim wget).each do |pkg|
