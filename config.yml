@@ -1,0 +1,25 @@
+# require in Vagrantgile
+manager:
+  box: "centos/7"
+  hosts:
+    - hostname: "manager-01"
+      lips:
+        - "10.10.10.1"
+app:
+  box: "centos/7"
+  hosts:
+    - hostname: "api-01"
+      lips:
+        - "10.10.10.10"
+mysql:
+  box: "centos/7"
+  hosts:
+    - hostname: "mysql-01"
+      lips:
+        - "10.10.10.200"
+redis:
+  box: "centos/7"
+  hosts:
+    - hostname: "redis-01.adroute.jp"
+      lips:
+        - "10.10.10.250"
