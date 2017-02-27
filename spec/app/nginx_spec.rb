@@ -4,7 +4,7 @@ describe package("nginx") do
 	it { should be_installed }
 end
 
-describe command("nginx -v") do
+describe command("rpm -q nginx") do
 	its(:stdout) { should match /1\.11\.10/ }
 end
 
