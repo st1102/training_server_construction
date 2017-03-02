@@ -61,6 +61,14 @@ $ vagrant up redis
 
 ## テストの実行
 
+初回のみ下記コマンドを実行してください．
+gemのパッケージマネージャであつbundlerのinstallと，必要なGemをbundlerでinstallしています．
+
+```
+$ gem install bundler
+$ bundle install --path=vendor/bundle
+```
+
 その後下記のコマンドでテストを実行します．
 vagrantユーザのログインパスワードは`vagrant`で管理者権限実行時のパスワードも`vagrant`となります．
 
