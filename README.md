@@ -30,9 +30,9 @@ $ vagrant up redis
 	- nginxのversion1.11がinstall済み
 	- nginx.serviceがsystemdで起動している
 	- nginx.serviceがホストの再起動時に自動で立ち上がる
+	- すべてのhttpへのアクセスが301を返してhttpsにリダイレクトする
 	- nginxのstub_statusが`localhost/nginx_status`で見れる
-	- ホスト名dev.example.comでのアクセスが用意されている
-	- `http://dev.example.com`でのアクセス時に301が返って`https://dev.example.com`へリダイレクトして200を返す
+	- `localhost/nginx_status`以外のアクセスは空のgifを返す
 
 ### mysql
 
