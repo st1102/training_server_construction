@@ -1,10 +1,4 @@
 # require in Vagrantgile
-manager:
-  box: "centos/7"
-  hosts:
-    - hostname: "manager-01"
-      lips:
-        - "10.10.10.1"
 app:
   box: "centos/7"
   hosts:
