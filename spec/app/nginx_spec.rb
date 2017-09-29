@@ -5,7 +5,7 @@ describe package("nginx") do
 end
 
 describe command("rpm -q nginx") do
-	its(:stdout) { should match /1\.13\.10/ }
+	its(:stdout) { should match /1\.13/ }
 end
 
 describe service("nginx") do
