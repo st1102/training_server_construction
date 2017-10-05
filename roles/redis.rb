@@ -1,0 +1,5 @@
+include_recipe "../cookbooks/sshd/default.rb"
+include_recipe "../cookbooks/vim/default.rb"
+include_recipe "../cookbooks/wget/default.rb"
+include_recipe "../cookbooks/firewalld/default.rb"
+include_recipe "../cookbooks/redis/default.rb"
