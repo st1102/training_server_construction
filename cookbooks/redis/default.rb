@@ -6,14 +6,3 @@ end
 package 'redis' do
   action :install
 end
-
-if (node[:hostname] = /redis/)
-  remote_file "/etc/redis.conf" do
-    mode "644"
-    source "./files/etc/conf.d/redis.conf"
-  end
-
-  service 'redis' do
-    action [:enable, :start]
-  end
-end
