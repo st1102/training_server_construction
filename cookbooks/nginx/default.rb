@@ -16,7 +16,7 @@ remote_file "/etc/nginx/nginx.conf" do
 end
 
 remote_file "/etc/nginx/conf.d/default.conf" do
-  source "./files/etc/conf.d/default.conf"
+  source "../roles/app/files/etc/conf.d/default.conf"
 end
 
 service 'nginx' do
