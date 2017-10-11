@@ -15,10 +15,6 @@ remote_file "/etc/nginx/nginx.conf" do
   source "./files/etc/conf.d/nginx.conf"
 end
 
-remote_file "/etc/nginx/conf.d/default.conf" do
-  source "../roles/app/files/etc/conf.d/default.conf"
-end
-
 service 'nginx' do
   action [:enable, :start]
 end
